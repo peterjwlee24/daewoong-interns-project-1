@@ -20,3 +20,36 @@ Develop a Node.js and MongoDB backend system for a student grading portal. The s
   "name": "string",
   "major": "string"
 }
+```
+### Teachers Schema
+
+```json
+{
+  "_id": "<MongoDB Generated ID>",
+  "name": "string",
+  "subjectsTaught": ["string"]
+}
+```
+### Classes Schema
+
+```json
+{
+  "_id": "<MongoDB Generated ID>",
+  "classId": "string",
+  "subject": "string",
+  "teacher_id": "<MongoDB Teachers _id>",
+  "student_ids": ["<MongoDB Students _id>"]
+}
+```
+### Grades Schema
+
+```json
+{
+  "_id": "<MongoDB Generated ID>",
+  "student_id": "<MongoDB Students _id>",
+  "class_id": "<MongoDB Classes _id>",
+  "grade": "string",
+  "semester": "string",
+  "year": "number"
+}
+```
