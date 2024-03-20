@@ -29,8 +29,16 @@ Develop a Node.js and MongoDB backend system for a student grading portal. The s
 {
   "_id": "<MongoDB Generated ID>",
   "name": "string",
-  "major": "string"
+  "major": "string",
+  "class_enrollment_history": [
+    {
+      "class_id": "<MongoDB Classes _id>",
+      "semester": "string",
+      "year": "number"
+    }
+  ]
 }
+
 ```
 ### Teachers Schema
 
@@ -40,6 +48,7 @@ Develop a Node.js and MongoDB backend system for a student grading portal. The s
   "name": "string",
   "subjectsTaught": ["string"]
 }
+
 
 
 ```
@@ -55,6 +64,7 @@ Develop a Node.js and MongoDB backend system for a student grading portal. The s
   "student_ids": ["<MongoDB Students _id>"]
 }
 
+
 ```
 ### Grades Schema
 
@@ -67,6 +77,7 @@ Develop a Node.js and MongoDB backend system for a student grading portal. The s
   "semester": "string",
   "year": "number"
 }
+
 
 ```
 # GPA Calculation Method
