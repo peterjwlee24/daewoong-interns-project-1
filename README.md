@@ -160,8 +160,8 @@ function isPastSemester(semester, year) {
 
 ## GPA Calculation APIs
 
-- **GET `/students/{studentId}/gpa/{semester}`**: Calculate the GPA for a specific semester.
-  - **Error Cases**: If studentId or semester is invalid, return 404 Not Found.
+- **GET `/students/{studentId}/gpa/{semester}/{year}`**: Calculate the GPA for a specific semester.
+  - **Error Cases**: If studentId or semester/year is invalid, return 404 Not Found.
 
 - **GET `/students/{studentId}/gpa`**: Calculate the cumulative GPA across all semesters.
   - **Error Cases**: If studentId is invalid, return 404 Not Found.
